@@ -1,29 +1,11 @@
-import NewCard from '../components/NewCard';
+import Card from '../components/Card';
 import detectNetwork from '../lib/cards';
 
-
-
-class Home extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      network: ""
-    }
-  }
-  handleChange(e){
-    this.setState({network: detectNetwork(e.target.value)})
-  }
-
-  render(){
-    return (<div>
-        <h1>Card Networks</h1>
-        <NewCard onChange = {this.handleChange.bind(this)} />
-        <p>{this.state.network}</p>
-      </div>
-    )
-  }
-  
+export default function Home(){
+  return (
+    <div>
+      <h1>Card Networks</h1>
+      <Card/>
+    </div>
+  )
 }
-
-
-export default Home;
