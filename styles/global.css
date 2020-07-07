@@ -51,3 +51,23 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
+
+#card-number{
+  width: 220px;
+  padding: 5px;
+  text-align: center;
+}
+
+#card-type{
+  display: block;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.ok{
+  color: green;
+}
+.error{
+  color: red;
+}
