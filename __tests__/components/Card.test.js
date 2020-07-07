@@ -17,7 +17,6 @@ const TEST_CASES = [
     ["4512345678901", "Visa"],
     ["4512345678901345", "Visa"],
     ["4512345678901345345", "Visa"],
-
   ]
 
 describe('<Card />', () => {
@@ -27,5 +26,10 @@ describe('<Card />', () => {
         newCardComponent.find('#card-number').simulate('change', {target: {value: cardNumber}});
         expect(newCardComponent.find('#card-type').text()).toBe(expectedCardType);
     })
+  });
+  it('showns error message if card number is not correct', () => {
+    const newCardComponent = shallow(<NewCard />);
+    newCardComponent.find('#card-number').simulate('change', {target: {value: "5555555555"}});
+    expect(newCardComponent.find('#card-type').text()).toBe("Invalid Card");
   });
 })

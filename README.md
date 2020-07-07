@@ -1,6 +1,10 @@
 # Card Detection - Coding Challenge
 
 This example correctly identifies card networks. The project was elaborated using NextJs(React Framework) and Jest configured to tackle Unit and Component Tests.
+
+![](example.gif)
+
+
 ## How to Use
 
 In your terminal, run the following command in the project directory:
