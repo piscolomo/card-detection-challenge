@@ -1,21 +1,24 @@
-# Next.js + Jest
+# Card Detection - Coding Challenge
 
-This example shows how to configure Jest to work with Next.js.
-
-This includes Next.js' built-in support for Global CSS, CSS Modules, and TypeScript!
-
+This example correctly identifies card networks. The project was elaborated using NextJs(React Framework) and Jest configured to tackle Unit and Component Tests.
 ## How to Use
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
-
-In your terminal, run the following command:
+In your terminal, run the following command in the project directory:
 
 ```bash
-npx create-next-app --example with-jest
+yarn install
 ```
+Installs all the node modules, then run:
+
+```bash
+yarn start
+```
+To run the app in port 3000, you can check the app now in: http://localhost:3000. Open it in the browser
 
 ## Run Jest Tests
 
 ```bash
-npm test
+yarn test
 ```
+
+Make sure to press a to run all the tests.
