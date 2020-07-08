@@ -19,5 +19,10 @@ test("detectNetwork correctly identifies card networks", () => {
   TEST_CASES.forEach(([cardNetwork, expectedNetwork]) => {
     expect(detectNetwork(cardNetwork)).toBe(expectedNetwork)
   })
-  
+});
+
+test("detectNetwork return invalid card if string has different characters rather than numbers", ()=>{
+  expect(detectNetwork("341234sfg67890123")).toBe("Invalid Card")
+  expect(detectNetwork("abcdefghij")).toBe("Invalid Card")
+  expect(detectNetwork("341234s?.67890123")).toBe("Invalid Card")
 });
